@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>THE CHOICE</title>
+
+  <style>
+    body {
+      background-color: #f5ebe0;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding-top: 110px;
+      color: #5a2a2a;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 50px;
+      letter-spacing: 10px;
+      margin-bottom: 35px;
+      opacity: 0;
+      animation: fadeLine 1.5s forwards;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 20px;
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.4;
+    }
+
+    .line {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeLine 1s forwards;
+      margin: 10px 0;
+    }
+
+    .buttons {
+      margin-top: 55px;
+      opacity: 0;
+      animation: fadeLine 1s forwards;
+      animation-delay: 8.5s;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 30px;
+      border: 1px solid #5a2a2a;
+      text-decoration: none;
+      color: #5a2a2a;
+      font-size: 16px;
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background-color: #5a2a2a;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .home {
+      margin-top: 30px;
+      opacity: 0;
+      animation: fadeLine 1s forwards;
+      animation-delay: 9s;
+    }
+
+    @keyframes fadeLine {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>THE CHOICE</h1>
+
+  <div class="quote">
+    <p class="line" style="animation-delay: 1s;">Your shift was almost over.</p>
+    <p class="line" style="animation-delay: 2s;">Everything was quiet.</p>
+    <p class="line" style="animation-delay: 3s;">Until the alarm started.</p>
+    <p class="line" style="animation-delay: 5.5s;">The lights switched to emergency mode.</p>
+
+    <p class="line" style="animation-delay: 7s;">Whatever was inside the lab…</p>
+    <p class="line" style="animation-delay: 8s;">is no longer where it’s supposed to be.</p>
+  </div>
+
+  <div class="buttons">
+    <a href="story.html">BEGIN</a>
+  </div>
+
+  <div class="home">
+    <a href="../index.html">HOME</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save Him</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #070707;
+      color: #e8e0d6;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding-top: 90px;
+    }
+
+    h1 {
+      color: #8b1e1e;
+      letter-spacing: 6px;
+      font-size: 42px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .text {
+      max-width: 750px;
+      margin: 35px auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .line {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .l1 { animation-delay: 1s; }
+    .l2 { animation-delay: 2.5s; }
+    .l3 { animation-delay: 4s; }
+    .l4 { animation-delay: 5.5s; }
+
+    .choices {
+      margin-top: 50px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      animation-delay: 7s;
+    }
+
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 14px 28px;
+      border: 1px solid #8b1e1e;
+      color: #e8e0d6;
+      text-decoration: none;
+      font-size: 16px;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background-color: #8b1e1e;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .nav {
+      margin-top: 60px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      animation-delay: 8.5s;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>TOO CLOSE</h1>
+
+  <div class="text">
+    <p class="line l1">You push the door open slowly.</p>
+    <p class="line l2">Your colleague is on the floor… still alive.</p>
+    <p class="line l3">The creature stands over him.</p>
+    <p class="line l4">It has not noticed you yet.</p>
+  </div>
+
+  <div class="choices">
+    <a href="escape.html">Trigger alarm to distract it</a>
+    <a href="death.html">Grab a tool and attack it</a>
+  </div>
+
+  <div class="nav">
+    <a href="camera.html">BACK</a>
+    <a href="../index.html">HOME</a>
+  </div>
+
+</body>
+</html>

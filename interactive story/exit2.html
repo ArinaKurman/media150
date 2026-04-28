@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Run to Exit</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #060606;
+      color: #e8e0d6;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    h1 {
+      color: #8b1e1e;
+      letter-spacing: 6px;
+      font-size: 42px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .text {
+      max-width: 750px;
+      margin: 35px auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .line {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .l1 { animation-delay: 1s; }
+    .l2 { animation-delay: 2.5s; }
+    .l3 { animation-delay: 4s; }
+    .l4 { animation-delay: 5.5s; }
+
+    /* DOORS */
+    .doors {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 60px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      animation-delay: 7s;
+    }
+
+    .door img {
+      width: 220px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .door img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+
+    .label {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.8;
+    }
+
+    a {
+      text-decoration: none;
+      color: #e8e0d6;
+    }
+
+    .nav {
+      margin-top: 60px;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>RUN</h1>
+
+  <div class="text">
+    <p class="line l1">You leave the control panel and run into the hallway.</p>
+    <p class="line l2">The alarm is silent now, but somehow that makes it worse.</p>
+    <p class="line l3">At the end of the corridor, you see two doors.</p>
+    <p class="line l4">One is orange. One is dark gray.</p>
+  </div>
+
+  <div class="doors">
+
+    <!-- ORANGE DOOR (ESCAPE) -->
+    <div class="door">
+      <a href="escape.html">
+        <img src="orangedoor.jpg">
+        <div class="label">Orange Door</div>
+      </a>
+    </div>
+
+    <!-- GRAY DOOR (DEATH) -->
+    <div class="door">
+      <a href="death.html">
+        <img src="blackdoor.jpg">
+        <div class="label">Gray Door</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="nav">
+    <a href="shutdown.html">BACK</a>
+    <a href="../index.html">HOME</a>
+  </div>
+
+</body>
+</html>
