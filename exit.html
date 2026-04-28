@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choose a Door</title>
+
+  <style>
+    body {
+      background-color: #0b0b0f;
+      color: #e8e0d6;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding-top: 100px;
+      margin: 0;
+    }
+
+    h1 {
+      color: #8b1e1e;
+      letter-spacing: 5px;
+    }
+
+    .text {
+      max-width: 700px;
+      margin: 30px auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .doors {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 60px;
+    }
+
+    .door img {
+      width: 200px;
+      height: auto;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .door img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+
+    .label {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.8;
+    }
+
+    a {
+      text-decoration: none;
+      color: #e8e0d6;
+    }
+
+    .home {
+      margin-top: 60px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .doors {
+      animation: fadeIn 2s;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>TWO DOORS</h1>
+
+  <div class="text">
+    The hallway splits into two paths.<br><br>
+    One door is painted gray.<br>
+    The other glows faintly orange.<br><br>
+    You hear something moving behind one of them.
+  </div>
+
+  <div class="doors">
+
+    <!-- GRAY DOOR (DEATH) -->
+    <div class="door">
+      <a href="death.html">
+        <img src="blackdoor.jpg">
+        <div class="label">Gray Door</div>
+      </a>
+    </div>
+
+    <!-- ORANGE DOOR (EXIT) -->
+    <div class="door">
+      <a href="escape.html">
+        <img src="orangedoor.jpg">
+        <div class="label">Orange Door</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="home">
+    <a href="../index.html">HOME</a>
+  </div>
+
+</body>
+</html>

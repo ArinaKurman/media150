@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Camera Feed</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #070707;
+      color: #e8e0d6;
+      font-family: Georgia, serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 40px;
+      color: #8b1e1e;
+      letter-spacing: 5px;
+    }
+
+    .camera-img {
+      width: 80%;
+      max-width: 900px;
+      margin-top: 25px;
+      border: 1px solid #333;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .text {
+      max-width: 750px;
+      margin: 30px auto;
+      font-size: 20px;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 1.5s;
+    }
+
+    .choices {
+      margin-top: 35px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 3.5s;
+    }
+
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 14px 28px;
+      border: 1px solid #8b1e1e;
+      color: #e8e0d6;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background-color: #8b1e1e;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>CAMERA FEED</h1>
+
+  <img src="cameracopy.jpg" class="camera-img" alt="Security camera feed">
+
+  <div class="text">
+    The camera signal finally loads.<br><br>
+    On one screen, you see the creature moving through the hallway.<br>
+    On another screen, you see the exit door still open.<br><br>
+    Then you notice someone on the floor near the creature.<br>
+    It is your colleague.
+  </div>
+
+  <div class="choices">
+    <a href="escape.html">Leave and run to the exit</a>
+    <a href="save.html">Try to save your colleague</a>
+  </div>
+
+  <div>
+    <a href="control.html">BACK</a>
+    <a href="../index.html">HOME</a>
+  </div>
+
+</body>
+</html>

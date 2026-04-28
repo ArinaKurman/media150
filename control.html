@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Control Panel</title>
+
+  <style>
+    body {
+      background-color: #0b0b0f;
+      color: #e8e0d6;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding-top: 90px;
+      margin: 0;
+    }
+
+    h1 {
+      color: #8b1e1e;
+      letter-spacing: 6px;
+      font-size: 42px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .text {
+      max-width: 750px;
+      margin: 35px auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .line {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .line1 { animation-delay: 1s; }
+
+    .line3 { animation-delay: 4s; }
+
+    .choices {
+      margin-top: 50px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      animation-delay: 5.5s;
+    }
+
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 28px;
+      border: 1px solid #8b1e1e;
+      color: #e8e0d6;
+      text-decoration: none;
+      font-size: 16px;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background-color: #8b1e1e;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>CONTROL PANEL</h1>
+
+  <div class="text">
+    <p class="line line1">The monitors flicker as you reach the control panel.</p>
+    <p class="line line3">The system gives you two options before it shuts down.</p>
+  </div>
+
+  <div class="choices">
+    <a href="camera.html">Check the camera</a>
+    <a href="shutdown.html">Shut down the alarm</a>
+  </div>
+
+  <div>
+    <a href="story.html">BACK</a>
+    <a href="index.html">HOME</a>
+  </div>
+
+</body>
+</html>

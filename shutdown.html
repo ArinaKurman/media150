@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shutdown System</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #050505;
+      color: #e8e0d6;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    h1 {
+      color: #3a6c7a;
+      letter-spacing: 5px;
+      font-size: 40px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .text {
+      max-width: 750px;
+      margin: 35px auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .line {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    .l1 { animation-delay: 1s; }
+    .l2 { animation-delay: 2.5s; }
+    .l3 { animation-delay: 4s; }
+    .l5 { animation-delay: 7s; }
+
+    .choices {
+      margin-top: 50px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      animation-delay: 8.5s;
+    }
+
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 14px 28px;
+      border: 1px solid #3a6c7a;
+      color: #e8e0d6;
+      text-decoration: none;
+      font-size: 16px;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background-color: #3a6c7a;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .nav {
+      margin-top: 60px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      animation-delay: 10s;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>SHUTDOWN</h1>
+
+  <div class="text">
+    <p class="line l1">You slam your hand onto the control panel.</p>
+    <p class="line l2">Emergency systems override normal access.</p>
+    <p class="line l3">Lights flicker. Cameras glitch.</p>
+    <p class="line l5">You just changed the rules.</p>
+  </div>
+
+  <div class="choices">
+    <a href="camera.html">Check cameras</a>
+    <a href="exit2.html">Run to exit immediately</a>
+  </div>
+
+  <div class="nav">
+    <a href="story.html">BACK</a>
+    <a href="index.html">HOME</a>
+  </div>
+
+</body>
+</html>
